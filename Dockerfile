@@ -5,7 +5,7 @@ FROM ubuntu:latest
 RUN apt-get update --fix-missing && apt-get -y upgrade &&\
 apt-get install -y sudo curl wget unzip git python build-essential
 
-# Install node 6
+# Install node 9
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs
 
